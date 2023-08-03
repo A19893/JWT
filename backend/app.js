@@ -8,4 +8,8 @@ app.use(express.urlencoded({extended:true}))
 //Route Imports
 const user=require('./routes/userRoutes');
 app.use('/users',user);
+const product=require('./routes/productRoute');
+app.use('/products',product)
+const orders=require('./routes/orderRoute');
+app.use('/orders',orders)
 module.exports=app;
